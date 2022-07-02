@@ -39,10 +39,18 @@ function sumOfNumbers(arrayOfNumbers) {
  * @param {Array} arrayOfNumbers the array containing even or non-even numbers
  * @returns number the count of even numbers
  */
+let count = 0
 function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+    for (let i = 0; i < arrayOfNumbers.length; i++){
+        if (arrayOfNumbers[i] % 2 == 0){
+            count++
+        }
+    }
+    return count
+
+    // return arrayOfNumbers.length;
 }
-// assignment.countEvenNumbers = countEvenNumbers;
+ assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
